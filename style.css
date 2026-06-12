@@ -1,308 +1,472 @@
+/* ===============================
+   GOOGLE FONT
+================================ */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+/* ===============================
+   RESET
+================================ */
+
 *{
-
-margin:0;
-
-padding:0;
-
-box-sizing:border-box;
-
-font-family:Poppins,sans-serif;
-
-scroll-behavior:smooth;
-
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
 }
 
 body{
-
-background:#fff7fb;
-
-overflow-x:hidden;
-
+    background:#fff7fb;
+    overflow-x:hidden;
 }
+
+/* ===============================
+   HEADER
+================================ */
 
 header{
 
-position:fixed;
+    position:fixed;
 
-top:0;
+    top:0;
 
-left:0;
+    left:0;
 
-width:100%;
+    width:100%;
 
-height:85px;
+    height:90px;
 
-background:white;
+    background:#fff;
 
-display:flex;
+    display:flex;
 
-justify-content:space-between;
+    justify-content:space-between;
 
-align-items:center;
+    align-items:center;
 
-padding:0 8%;
+    padding:0 8%;
 
-z-index:999;
+    z-index:999;
 
-box-shadow:0 2px 15px rgba(0,0,0,.08);
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
 
 }
 
 .logo{
 
-display:flex;
+    display:flex;
 
-align-items:center;
+    align-items:center;
 
-gap:10px;
+    gap:15px;
 
 }
 
 .logo img{
 
-width:55px;
+    width:55px;
 
 }
 
 .logo h2{
 
-color:#ff6db2;
+    color:#ff69b4;
 
-font-size:38px;
+    font-size:40px;
+
+    font-weight:700;
 
 }
 
 nav{
 
-display:flex;
+    display:flex;
 
-gap:35px;
+    gap:35px;
 
 }
 
 nav a{
 
-text-decoration:none;
+    text-decoration:none;
 
-color:#555;
+    color:#555;
 
-font-weight:600;
+    font-weight:600;
+
+    transition:.3s;
 
 }
 
 nav a:hover{
 
-color:#ff6db2;
+    color:#ff69b4;
 
 }
 
+/* ===============================
+   HERO
+================================ */
+
 .hero{
 
-position:relative;
+    position:relative;
 
-min-height:100vh;
+    min-height:100vh;
 
-display:flex;
+    display:flex;
 
-justify-content:space-between;
+    justify-content:space-between;
 
-align-items:center;
+    align-items:center;
 
-padding:130px 8%;
+    padding:140px 8% 80px;
 
-background:linear-gradient(135deg,#fff0f7,#edf8ff,#fffde8);
+    background:linear-gradient(
+        135deg,
+        #fff0f8,
+        #edf8ff,
+        #fffce8
+    );
+
+    overflow:hidden;
 
 }
 
 .left{
 
-width:55%;
+    width:55%;
+
+    z-index:2;
 
 }
 
 .welcome{
 
-display:inline-block;
+    display:inline-block;
 
-padding:14px 35px;
+    padding:15px 35px;
 
-background:white;
+    background:white;
 
-border-radius:50px;
+    border-radius:50px;
 
-color:#ff6db2;
+    color:#ff69b4;
 
-font-weight:600;
+    font-weight:600;
 
-box-shadow:0 5px 20px rgba(0,0,0,.08);
+    box-shadow:0 10px 30px rgba(255,105,180,.15);
 
-margin-bottom:30px;
+    margin-bottom:30px;
 
 }
 
 .left h3{
 
-font-size:55px;
+    font-size:60px;
 
-color:#2d3b77;
+    color:#233c72;
 
 }
 
 .left h1{
 
-font-size:78px;
+    font-size:85px;
 
-color:#ff6db2;
+    color:#ff69b4;
 
-margin:15px 0;
+    font-weight:800;
+
+    margin:15px 0;
 
 }
 
 .left h2{
 
-font-size:38px;
+    font-size:38px;
 
-color:#555;
+    color:#555;
 
-margin-bottom:25px;
+    margin-bottom:25px;
 
 }
 
 .left p{
 
-font-size:22px;
+    font-size:22px;
 
-line-height:1.8;
+    color:#666;
 
-color:#666;
+    line-height:1.9;
 
-margin-bottom:40px;
+    margin-bottom:40px;
+
+    max-width:650px;
 
 }
 
+/* ===============================
+   BUTTON
+================================ */
+
 .btn{
 
-display:inline-block;
+    display:inline-block;
 
-padding:20px 45px;
+    padding:20px 45px;
 
-background:#ff6db2;
+    background:#ff69b4;
 
-color:white;
+    color:white;
 
-text-decoration:none;
+    border-radius:50px;
 
-border-radius:50px;
+    text-decoration:none;
 
-font-weight:700;
+    font-weight:600;
 
-transition:.3s;
+    transition:.3s;
+
+    box-shadow:0 10px 25px rgba(255,105,180,.3);
 
 }
 
 .btn:hover{
 
-transform:translateY(-5px);
+    background:#ff4fa0;
+
+    transform:translateY(-6px);
 
 }
 
+/* ===============================
+   PROFILE
+================================ */
+
 .right{
 
-width:40%;
+    width:40%;
 
-display:flex;
+    display:flex;
 
-justify-content:center;
+    justify-content:center;
+
+    z-index:2;
 
 }
 
 .right img{
 
-width:420px;
+    width:430px;
 
-height:420px;
+    height:430px;
 
-border-radius:50%;
+    border-radius:50%;
 
-border:10px solid white;
+    object-fit:cover;
 
-object-fit:cover;
+    border:10px solid white;
 
-box-shadow:0 20px 40px rgba(0,0,0,.15);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+    transition:.4s;
 
 }
 
+.right img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===============================
+   DECORATION
+================================ */
+
 .cloud1{
 
-position:absolute;
+    position:absolute;
 
-top:120px;
+    top:100px;
 
-left:30px;
+    left:30px;
 
-width:90px;
+    width:90px;
+
+    animation:float 4s infinite ease-in-out;
 
 }
 
 .cloud2{
 
-position:absolute;
+    position:absolute;
 
-top:120px;
+    top:100px;
 
-right:60px;
+    right:50px;
 
-width:130px;
+    width:130px;
+
+    animation:float 5s infinite ease-in-out;
 
 }
 
 .star1{
 
-position:absolute;
+    position:absolute;
 
-top:250px;
+    top:220px;
 
-left:200px;
+    left:220px;
 
-width:25px;
+    width:25px;
 
-animation:float 4s infinite;
+    animation:float 3s infinite;
 
 }
 
 .star2{
 
-position:absolute;
+    position:absolute;
 
-top:230px;
+    top:250px;
 
-right:250px;
+    right:260px;
 
-width:25px;
+    width:25px;
 
-animation:float 3s infinite;
+    animation:float 4s infinite;
 
 }
 
 .balloon{
 
-position:absolute;
+    position:absolute;
 
-bottom:80px;
+    bottom:80px;
 
-left:50px;
+    left:60px;
 
-width:90px;
+    width:90px;
+
+    animation:updown 5s infinite;
 
 }
 
+/* ===============================
+   ANIMATION
+================================ */
+
 @keyframes float{
 
-50%{
+    0%{
 
-transform:translateY(-15px);
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes updown{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media(max-width:991px){
+
+.hero{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+    padding-top:180px;
+
+}
+
+.left{
+
+    width:100%;
+
+}
+
+.right{
+
+    width:100%;
+
+    margin-bottom:50px;
+
+}
+
+.right img{
+
+    width:300px;
+
+    height:300px;
+
+}
+
+.left h1{
+
+    font-size:50px;
+
+}
+
+.left h2{
+
+    font-size:28px;
+
+}
+
+.left h3{
+
+    font-size:35px;
+
+}
+
+.left p{
+
+    font-size:18px;
+
+}
+
+nav{
+
+    display:none;
 
 }
 
